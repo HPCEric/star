@@ -1,5 +1,5 @@
 <?php
-$str= "STAR";
+$str = "STAR";
 $star = "lux";
 
 // echo $str;
@@ -24,21 +24,27 @@ $star = "lux";
 // echo "<br>";
 
 
-echo $str='$star';
+echo $str = '$star';
 echo "<br>";
 
-echo $str="$star";
+echo $str = "star";
 echo "<br>";
 
-echo $str=="$star";
+echo $str = "$star";
 echo "<br>";
 
-// echo "<br>";
-// echo 'str';
-// echo "<br>";
-// echo 'str';
-// echo "<br>";
-// echo 'str';
-// echo "<br>";
-// echo 'str';
-// echo "<br>";
+echo $str == "$star";
+echo "<br>";
+
+echo $str === "$star";
+echo "<br>";
+
+echo "$str = $star";
+echo "<br>";
+
+echo '$str = $star';
+echo "<br>";
+
+echo $str = $star;
+echo "<br>";
+
