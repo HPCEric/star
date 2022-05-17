@@ -1,0 +1,76 @@
+<script>
+    // function stars(n) {
+    //     let star = '';
+    //     for (i = 0; i < n; i++) {
+    //         star += '*';
+    //         console.log(star);
+    //     }
+    // }
+    // stars(5);
+
+    // function makeStars(n){
+    //     let star = '';
+    //     let starArray = [];
+    //     for(i=0;i<n;i++){
+    //         star += '*';
+    //         starArray.push(star);
+    //     }
+    //     return starArray.join('\\n');
+    // }
+    // console.log(makeStars(5));
+
+    // function stars2(n){
+    //     let star = '';
+    //     let starArray = [];
+    //     for(i=0;i<n;i++){
+    //         star+='*';
+    //         starArray.push(star);
+    //     }
+    //     for(i=n-1;i>0;i--){
+    //         starArray.push(starArray[i-1]);
+    //     }
+    //     return starArray.join('\n');
+    // }
+    // console.log(stars2(5));
+    let n = 5;
+    for (i = 0; i < (n * 2 - 1); i++) {
+        if (i < n) {
+            for (j = i; j < n - 1; j++) {
+                document.write('&nbsp&nbsp');
+            }
+            for (k = 0; k < (i * 2 - 1); k++) {
+                document.write('*');
+            }
+        }else{
+            for(j=0;j<(i-n)+1;j++){
+                document.write('&nbsp&nbsp');
+            }
+            r=((n*2-1)-i)-1;
+            s=r*2-1
+            for(k=0;k<s;k++){
+                document.write('*');
+            }
+        }
+        document.write('<br>');
+    }
+    function stars2(n) {
+
+
+
+        // let space = ' ';
+        // let star = '';
+        // let starArray = [];
+        // for (i = 0; i < n; i++) {
+        //     for (j = n - 1; j > 0; j--) {
+        //         starArray.push(' ');
+        //     }
+        //     for (k = 0; k < n; k++) {
+        //         star += '*';
+        //         starArray.push(star);
+        //     }
+        // }
+
+        // return starArray.join('\n');
+    }
+    console.log(stars2(5));
+</script>
